@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="comments">
+      <div class="container">
+        <div class="comments__wrapper">
+          <form
+            class="form"
+            id="form"
+            onsubmit="return checkForm(this)"
+            method="post"
+          >
+            <h2>Оставьте Ваш комментарий</h2>
+            <label for="name">Введите Ваше имя:</label>
+            <input type="text" name="name" id="name" />
+            <label for="avatar">Введите ссылку Вашего аватара:</label>
+            <input type="url" name="avatar" id="avatar" />
+            <label for="comment">Оставьте комментарий</label>
+            <textarea name="comment" id="comment"></textarea>
+            <input
+              class="input-btn"
+              type="submit"
+              name="submit"
+              value="Отправить"
+            />
+          </form>
+          <div class="chat">
+            <h2>Чат</h2>
+            <div class="chat__content">
+              <div class="author-info">
+                <img id="author-img" src="" alt="" />
+                <p id="chat-name"></p>
+              </div>
+              <p id="author-comment"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
