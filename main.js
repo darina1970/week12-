@@ -29,14 +29,10 @@
 
 
         let authorCommentChat = document.getElementById('author-comment');
-        authorCommentChat.innerHTML = authorComment
+        authorCommentChat.innerHTML = authorComment.replace(/viagra/gi, "***").replace(/XXX/gi, "***");
 
         return false;
     }
-
-
-    
-
 
 
 
