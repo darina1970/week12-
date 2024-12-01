@@ -4,16 +4,14 @@
         let firstLetter = name[0];
         console.log(firstLetter);
         let upperFirstLetter = firstLetter.toUpperCase();
-        console.log(upperFirstLetter)
+        console.log(upperFirstLetter);
         let slicedName = name.slice(1);
         console.log(slicedName);
         let correctName = upperFirstLetter + slicedName;
         console.log(correctName);
-        let trimmedCorrectName = correctName.trim();
-        console.log(trimmedCorrectName);
         
         let chatName = document.getElementById('chat-name');
-        chatName.innerHTML = trimmedCorrectName;
+        chatName.innerHTML = correctName.trim();
 
         let avatar = document.getElementById('avatar').value;
         console.log(avatar);
