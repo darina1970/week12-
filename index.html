@@ -10,32 +10,25 @@
     <section class="comments">
       <div class="container">
         <div class="comments__wrapper">
-          <form
-            class="form"
-            id="form"
-            onsubmit="return checkForm(this)"
-            method="post"
-          >
+          <div class="form" id="form">
             <h2>Оставьте Ваш комментарий</h2>
             <label for="name">Введите Ваше имя:</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="username" />
             <label for="avatar">Введите ссылку Вашего аватара:</label>
-            <input type="url" name="avatar" id="avatar" />
+            <input type="url" name="avatar" id="useravatar" />
             <label for="comment">Оставьте комментарий</label>
-            <textarea name="comment" id="comment"></textarea>
-            <input
-              class="input-btn"
-              type="submit"
-              name="submit"
-              value="Отправить"
-            />
-          </form>
+            <textarea name="comment" id="usercomment"></textarea>
+            <button class="input-btn" id="inputbtn">Отправить</button>
+          </div>
           <div class="chat">
             <h2>Чат</h2>
             <div class="chat__content">
-              <div class="author-info">
-                <img id="author-img" src="" alt="" />
-                <p id="chat-name"></p>
+              <div class="chat__header">
+                <div class="author-info">
+                  <img class="image-size" id="author-img" src="" alt="" />
+                  <p id="author-name"></p>
+                </div>
+                <p id="comment-date"></p>
               </div>
               <p id="author-comment"></p>
             </div>
