@@ -34,7 +34,7 @@ body {
 .chat {
     display: flex;
     flex-direction: column;
-    min-width: 300px;
+    min-width: 600px;
     margin: 30px;
     padding: 20px;
     background-color: cornsilk;
@@ -47,6 +47,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
+
 
 .input-btn {
     padding: 10px 10px;

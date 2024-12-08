@@ -14,6 +14,30 @@
             <h2>Оставьте Ваш комментарий</h2>
             <label for="name">Введите Ваше имя:</label>
             <input type="text" name="name" id="username" />
+            <fieldset id="radio-field">
+              <legend>Показывать ваше имя?</legend>
+              <div>
+                <input
+                  onclick="radioChoice()"
+                  type="radio"
+                  id="showname"
+                  name="yesno"
+                  value="yes"
+                  checked
+                />
+                <label for="showname">ДА</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  onclick="radioChoice()"
+                  id="notshowname"
+                  name="yesno"
+                  value="no"
+                />
+                <label for="notshowname">НЕТ</label>
+              </div>
+            </fieldset>
             <label for="avatar">Введите ссылку Вашего аватара:</label>
             <input type="url" name="avatar" id="useravatar" />
             <label for="comment">Оставьте комментарий</label>
@@ -28,7 +52,7 @@
                   <img class="image-size" id="author-img" src="" alt="" />
                   <p id="author-name"></p>
                 </div>
-                <p id="comment-date"></p>
+                <div id="comment-date"></div>
               </div>
               <p id="author-comment"></p>
             </div>
